@@ -12,13 +12,13 @@ Quick boilerplate setup for making Node.js applications in Typescript.
 ## Getting started
 create fresh app
 ```sh
-git clone https://github.com/Eyewavu/node-typescript-rollup.git my-app
+git clone https://github.com/Eyewavu/nodejs-typescript-template.git my-app
 cd my-app
 yarn install && yarn dev
 ```
 or add to existing directory
 ```sh
-git clone https://github.com/Eyewavu/node-typescript-rollup.git .
+git clone https://github.com/Eyewavu/nodejs-typescript-template.git .
 yarn install && yarn dev
 ```
 
