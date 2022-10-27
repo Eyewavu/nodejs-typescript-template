@@ -7,8 +7,11 @@
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
-    "rollup": "^3.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
     "rollup-plugin-terser": "^7.0.2",
+    "rollup": "^3.2.3",
     "tslib": "^2.4.0",
     "typescript": "^4.8.4"
   },
@@ -16,7 +19,8 @@
   "scripts": {
     "dev": "rollup -wc",
     "build": "rollup -c",
-    "start": "node ./dist/index.js"
+    "start": "NODE_OPTIONS=--enable-source-maps node ./dist/index.js",
+    "lint": "eslint src/**/*.ts"
   },
 
   "types": "./dist/index.d.ts",
